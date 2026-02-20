@@ -331,9 +331,12 @@ fn main() {
         .run(|app, event| match event {
             tauri::RunEvent::ExitRequested { .. } | tauri::RunEvent::Exit => {
                 let state = app.state::<AppState>();
-                if let Ok(mut runtime) = state.runtime.lock() {
-                    stop_backend(&mut runtime);
-                }
+                match state.runtime.lock() {
+                    Ok(mut runtime) => {
+                        stop_backend(&mut runtime);
+                    }
+                    Err(_) => {}
+                };
             }
             _ => {}
         });
