@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liteclaw.dev/schemas/action-card.schema.json",
+  "title": "ActionCard",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "card_id",
+    "plan_id",
+    "title",
+    "what_will_happen",
+    "exact_targets",
+    "warnings",
+    "approve_token_request"
+  ],
+  "properties": {
+    "card_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "plan_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "what_will_happen": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exact_targets": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approve_token_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "endpoint",
+        "method",
+        "payload"
+      ],
+      "properties": {
+        "endpoint": {
+          "type": "string",
+          "const": "/v1/approvals/issue-token"
+        },
+        "method": {
+          "type": "string",
+          "const": "POST"
+        },
+        "payload": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "plan_id"
+          ],
+          "properties": {
+            "plan_id": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        }
+      }
+    }
+  }
+}

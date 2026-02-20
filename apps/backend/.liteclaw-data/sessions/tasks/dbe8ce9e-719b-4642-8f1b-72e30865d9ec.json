@@ -1,0 +1,29 @@
+{
+  "task_id": "dbe8ce9e-719b-4642-8f1b-72e30865d9ec",
+  "plan_id": "fb61a526-e772-4af7-8f01-f0aa07c38db6",
+  "status": "completed",
+  "started_at": "2026-02-20T01:54:19Z",
+  "ended_at": "2026-02-20T01:54:19Z",
+  "agent": "conversation",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:54:19Z",
+      "level": "info",
+      "step_id": "step-1",
+      "message": "Executing conversation.respond",
+      "details": {
+        "preview": "Generate a direct response without system actions."
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:19Z",
+      "level": "info",
+      "step_id": "step-1",
+      "message": "Conversation response generated",
+      "details": {
+        "response": "Echo: search my project folder for TODO and list 10 results"
+      }
+    }
+  ],
+  "error": null
+}

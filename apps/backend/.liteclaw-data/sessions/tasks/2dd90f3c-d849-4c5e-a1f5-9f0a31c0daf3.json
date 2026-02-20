@@ -1,0 +1,29 @@
+{
+  "task_id": "2dd90f3c-d849-4c5e-a1f5-9f0a31c0daf3",
+  "plan_id": "3d03f2af-7d6a-4286-97ea-feeb26e94baa",
+  "status": "failed",
+  "started_at": "2026-02-20T01:56:41Z",
+  "ended_at": "2026-02-20T01:56:41Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "5cb36597-69a6-47f5-a3e2-793b44df4da9"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run python -m pip install requests"
+      }
+    }
+  ],
+  "error": "HTTP exception during execution"
+}

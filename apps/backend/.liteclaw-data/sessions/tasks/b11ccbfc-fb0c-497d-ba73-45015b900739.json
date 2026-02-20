@@ -1,0 +1,54 @@
+{
+  "task_id": "b11ccbfc-fb0c-497d-ba73-45015b900739",
+  "plan_id": "e8c6af04-77d1-4a84-871c-5676c5918398",
+  "status": "completed",
+  "started_at": "2026-02-20T02:00:13Z",
+  "ended_at": "2026-02-20T02:00:13Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "c45d238a-5c12-4747-8646-810f2b11988b"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run cat sample.txt"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command preview",
+      "details": {
+        "argv": [
+          "cat",
+          "sample.txt"
+        ],
+        "cwd": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_internal_commands_work0"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command completed",
+      "details": {
+        "exit_code": 0,
+        "timed_out": false,
+        "truncated": false,
+        "output": "hello\nTODO line\n"
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "9e9bf6a6-9dff-4ca4-8842-6e592e8ccbc9",
+  "plan_id": "63efcb6b-22e9-4513-a3ea-10ca73081b31",
+  "status": "completed",
+  "started_at": "2026-02-20T01:54:40Z",
+  "ended_at": "2026-02-20T01:54:40Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:54:40Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "ba4c379a-948a-419f-bfa9-89df7257521b"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:40Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run grep TODO sample.txt"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:40Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command preview",
+      "details": {
+        "argv": [
+          "grep",
+          "TODO",
+          "sample.txt"
+        ],
+        "cwd": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-11\\test_internal_commands_work0"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:40Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command completed",
+      "details": {
+        "exit_code": 0,
+        "timed_out": false,
+        "truncated": false,
+        "output": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-11\\test_internal_commands_work0\\sample.txt:2:TODO line\n"
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,42 @@
+{
+  "task_id": "5ce13f7e-c109-454a-990d-b4a2130f2750",
+  "plan_id": "43599978-6773-4b7b-ac05-697bd05773a0",
+  "status": "completed",
+  "started_at": "2026-02-20T01:54:20Z",
+  "ended_at": "2026-02-20T01:54:20Z",
+  "agent": "file",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:54:20Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "6bb8b978-a0f2-45f6-b4d2-bd98b49fe503"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:20Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing file.read_text",
+      "details": {
+        "preview": "Read text from file"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:20Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "file read completed",
+      "details": {
+        "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-11\\test_file_read_text_truncates_0\\allowed\\note.txt",
+        "content": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "truncated": true,
+        "returned_chars": 50,
+        "total_chars": 200
+      }
+    }
+  ],
+  "error": null
+}

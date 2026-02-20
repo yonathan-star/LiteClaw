@@ -1,0 +1,55 @@
+{
+  "task_id": "2d567ef0-28ec-423d-89c8-df8b55a5398b",
+  "plan_id": "e35bda1c-252b-4bbd-8112-2999ecc26726",
+  "status": "timeout",
+  "started_at": "2026-02-20T02:02:57Z",
+  "ended_at": "2026-02-20T02:02:57Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T02:02:57Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "16470413-1e22-4110-a82f-e1c34439fa75"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:02:57Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run find . *.txt"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:02:57Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command preview",
+      "details": {
+        "argv": [
+          "find",
+          ".",
+          "*.txt"
+        ],
+        "cwd": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-14\\test_shell_timeout_enforced0"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:02:57Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command completed",
+      "details": {
+        "exit_code": 124,
+        "timed_out": true,
+        "truncated": false,
+        "output": "command timed out\n"
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "e6891c60-096e-4288-ad0d-4cf498f61f92",
+  "plan_id": "6c127ca5-a538-4a69-9f45-66ed1339f412",
+  "status": "completed",
+  "started_at": "2026-02-20T01:56:41Z",
+  "ended_at": "2026-02-20T01:56:41Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "43df73fb-8bb4-482b-9812-87e94c8203f8"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run git status"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command preview",
+      "details": {
+        "argv": [
+          "git",
+          "status"
+        ],
+        "cwd": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-12\\test_shell_allowlist_and_deny_0"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command completed",
+      "details": {
+        "exit_code": 128,
+        "timed_out": false,
+        "truncated": false,
+        "output": "fatal: not a git repository (or any of the parent directories): .git\n"
+      }
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liteclaw.dev/schemas/approval-token.schema.json",
+  "title": "ApprovalToken",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "token_id",
+    "plan_id",
+    "issued_at",
+    "expires_at",
+    "ttl_seconds",
+    "one_time_use"
+  ],
+  "properties": {
+    "token_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "plan_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ttl_seconds": {
+      "type": "integer",
+      "const": 300
+    },
+    "one_time_use": {
+      "type": "boolean",
+      "const": true
+    },
+    "consumed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "2a5deff6-6183-4545-aefa-6a23c91efd2d",
+  "plan_id": "80dca722-5eea-4fd4-b9b2-f0eba4daef0d",
+  "status": "completed",
+  "started_at": "2026-02-20T01:56:40Z",
+  "ended_at": "2026-02-20T01:56:41Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:56:40Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "9f6f6adb-a12c-45f3-957a-31e818524a59"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:40Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run python --version"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command preview",
+      "details": {
+        "argv": [
+          "python",
+          "--version"
+        ],
+        "cwd": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-12\\test_shell_allowlist_and_deny_0"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command completed",
+      "details": {
+        "exit_code": 0,
+        "timed_out": false,
+        "truncated": false,
+        "output": "Python 3.13.12\n"
+      }
+    }
+  ],
+  "error": null
+}

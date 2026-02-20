@@ -1,0 +1,53 @@
+{
+  "task_id": "2ac4b784-b7f9-4476-9a12-ed23204c328a",
+  "plan_id": "2521b742-2e3c-4b85-b60e-a209b9b5efb2",
+  "status": "completed",
+  "started_at": "2026-02-20T01:54:39Z",
+  "ended_at": "2026-02-20T01:54:39Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:54:39Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "0b28e748-6aa1-4395-9fa2-24aeb966808e"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:39Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run pwd"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:39Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command preview",
+      "details": {
+        "argv": [
+          "pwd"
+        ],
+        "cwd": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-11\\test_internal_commands_work0"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:39Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command completed",
+      "details": {
+        "exit_code": 0,
+        "timed_out": false,
+        "truncated": false,
+        "output": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-11\\test_internal_commands_work0\n"
+      }
+    }
+  ],
+  "error": null
+}

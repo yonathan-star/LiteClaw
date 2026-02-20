@@ -1,0 +1,29 @@
+{
+  "task_id": "81b49249-b3ab-46ef-b452-ae780c9903fd",
+  "plan_id": "a8a4f444-c416-4421-8f2e-a13ade8d7a37",
+  "status": "failed",
+  "started_at": "2026-02-20T01:54:38Z",
+  "ended_at": "2026-02-20T01:54:38Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:54:38Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "dcb0b4ac-29db-428a-8d56-cd6ecdf4cf27"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:38Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run git commit"
+      }
+    }
+  ],
+  "error": "HTTP exception during execution"
+}

@@ -1,0 +1,113 @@
+{
+  "task_id": "c04b6404-4f75-4f27-b0ff-a1b1b4c6549c",
+  "plan_id": "02d731ba-b1a6-496a-a748-9984cfd047fe",
+  "status": "completed",
+  "started_at": "2026-02-20T02:00:01Z",
+  "ended_at": "2026-02-20T02:00:02Z",
+  "agent": "file",
+  "events": [
+    {
+      "timestamp": "2026-02-20T02:00:01Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "4f7e469c-acd8-4daa-8dcf-19bab2ea5796"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:01Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing file.search",
+      "details": {
+        "preview": "Search for TODO"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:01Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "search started",
+      "details": {
+        "root": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0",
+        "query": "TODO",
+        "max_results": 10
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:02Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "scanned 28 files",
+      "details": {
+        "scanned_files": 28,
+        "skipped_pattern_files": 0,
+        "skipped_binary_files": 0
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:02Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "search completed in 129 ms",
+      "details": {
+        "count": 10,
+        "results": [
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_0.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_12.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_15.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_18.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_21.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_24.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_27.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_3.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_30.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_returns_limit0\\file_33.txt",
+            "snippet": "TODO: fix this soon",
+            "match": "TODO"
+          }
+        ],
+        "elapsed_ms": 129
+      }
+    }
+  ],
+  "error": null
+}

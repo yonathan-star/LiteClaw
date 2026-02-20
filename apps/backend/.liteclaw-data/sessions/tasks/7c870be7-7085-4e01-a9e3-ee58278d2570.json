@@ -1,0 +1,38 @@
+{
+  "task_id": "7c870be7-7085-4e01-a9e3-ee58278d2570",
+  "plan_id": "92779f73-e08f-4d5e-95d1-b895ccc7cb82",
+  "status": "failed",
+  "started_at": "2026-02-20T01:54:43Z",
+  "ended_at": "2026-02-20T01:54:43Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:54:43Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "77199a02-5104-4d20-a497-0f41af5ec2b6"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:43Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run find . *.txt"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:43Z",
+      "level": "error",
+      "step_id": null,
+      "message": "Execution failed",
+      "details": {
+        "error": "Shell command timed out"
+      }
+    }
+  ],
+  "error": "Shell command timed out"
+}

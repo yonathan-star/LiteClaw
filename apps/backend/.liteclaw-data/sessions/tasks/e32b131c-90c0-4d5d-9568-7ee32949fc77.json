@@ -1,0 +1,29 @@
+{
+  "task_id": "e32b131c-90c0-4d5d-9568-7ee32949fc77",
+  "plan_id": "02b48b15-8d85-493b-a9fa-6e372a7489f7",
+  "status": "failed",
+  "started_at": "2026-02-20T02:00:13Z",
+  "ended_at": "2026-02-20T02:00:13Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "4eab2b9b-a0b0-407c-a1c4-1b06269fb81a"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run pwd"
+      }
+    }
+  ],
+  "error": "HTTP exception during execution"
+}

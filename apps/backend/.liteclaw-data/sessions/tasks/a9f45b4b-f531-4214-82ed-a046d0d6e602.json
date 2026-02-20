@@ -1,0 +1,113 @@
+{
+  "task_id": "a9f45b4b-f531-4214-82ed-a046d0d6e602",
+  "plan_id": "cb5eedbe-f128-467c-bed0-2758ab3ee7d0",
+  "status": "completed",
+  "started_at": "2026-02-20T02:00:05Z",
+  "ended_at": "2026-02-20T02:00:12Z",
+  "agent": "file",
+  "events": [
+    {
+      "timestamp": "2026-02-20T02:00:05Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "eaed93e5-c64e-477a-9804-24c9024c6a8d"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:05Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing file.search",
+      "details": {
+        "preview": "Search for TODO"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:05Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "search started",
+      "details": {
+        "root": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0",
+        "query": "TODO",
+        "max_results": 10
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:12Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "scanned 782 files",
+      "details": {
+        "scanned_files": 782,
+        "skipped_pattern_files": 0,
+        "skipped_binary_files": 0
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:12Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "search completed in 7445 ms",
+      "details": {
+        "count": 10,
+        "results": [
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_0.txt",
+            "snippet": "file 0 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_100.txt",
+            "snippet": "file 100 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1000.txt",
+            "snippet": "file 1000 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1100.txt",
+            "snippet": "file 1100 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1200.txt",
+            "snippet": "file 1200 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1300.txt",
+            "snippet": "file 1300 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1400.txt",
+            "snippet": "file 1400 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1500.txt",
+            "snippet": "file 1500 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1600.txt",
+            "snippet": "file 1600 - regular content TODO marker",
+            "match": "TODO"
+          },
+          {
+            "path": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-13\\test_file_search_5000_files_pe0\\doc_1700.txt",
+            "snippet": "file 1700 - regular content TODO marker",
+            "match": "TODO"
+          }
+        ],
+        "elapsed_ms": 7445
+      }
+    }
+  ],
+  "error": null
+}

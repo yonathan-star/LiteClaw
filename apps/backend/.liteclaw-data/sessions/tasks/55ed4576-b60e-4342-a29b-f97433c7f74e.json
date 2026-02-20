@@ -1,0 +1,55 @@
+{
+  "task_id": "55ed4576-b60e-4342-a29b-f97433c7f74e",
+  "plan_id": "6d1626ae-db13-4788-9795-7f18b35bbda4",
+  "status": "completed",
+  "started_at": "2026-02-20T01:56:41Z",
+  "ended_at": "2026-02-20T01:56:41Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "46815c7d-bdb9-4afa-a4b2-bce063e21106"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run find . *.txt"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command preview",
+      "details": {
+        "argv": [
+          "find",
+          ".",
+          "*.txt"
+        ],
+        "cwd": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-12\\test_internal_commands_work0"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "shell command completed",
+      "details": {
+        "exit_code": 0,
+        "timed_out": false,
+        "truncated": false,
+        "output": "C:\\Users\\17868\\AppData\\Local\\Temp\\pytest-of-17868\\pytest-12\\test_internal_commands_work0\\sample.txt\n"
+      }
+    }
+  ],
+  "error": null
+}

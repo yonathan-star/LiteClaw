@@ -1,0 +1,122 @@
+:root {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#status-badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #e2e8f0;
+}
+
+#local-only-badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: #d1fae5;
+    font-weight: 600;
+}
+
+.panel {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.privacy {
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+}
+
+.warning {
+    border: 1px solid #f59e0b;
+    background: #fffbeb;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.folder-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.folder-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+}
+
+.folder-path {
+    flex: 1;
+    word-break: break-all;
+}
+
+.muted {
+    color: #475569;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    padding: 4px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 8px;
+    padding: 8px 12px;
+}
+
+pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 10px;
+    border-radius: 6px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}

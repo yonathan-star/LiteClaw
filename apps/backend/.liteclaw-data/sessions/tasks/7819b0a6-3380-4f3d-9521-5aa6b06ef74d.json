@@ -1,0 +1,29 @@
+{
+  "task_id": "7819b0a6-3380-4f3d-9521-5aa6b06ef74d",
+  "plan_id": "99180742-21ef-4fe9-886a-4f7b7b936f62",
+  "status": "failed",
+  "started_at": "2026-02-20T02:00:13Z",
+  "ended_at": "2026-02-20T02:00:13Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "f0eb4b04-56e7-4649-acd8-1380c2006d1d"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T02:00:13Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run ls > out.txt"
+      }
+    }
+  ],
+  "error": "HTTP exception during execution"
+}

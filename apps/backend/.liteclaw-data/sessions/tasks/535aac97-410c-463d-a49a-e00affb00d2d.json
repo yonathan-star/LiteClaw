@@ -1,0 +1,29 @@
+{
+  "task_id": "535aac97-410c-463d-a49a-e00affb00d2d",
+  "plan_id": "a8cffdf0-3dd0-4fb2-a02d-9922e8500d92",
+  "status": "failed",
+  "started_at": "2026-02-20T01:56:41Z",
+  "ended_at": "2026-02-20T01:56:41Z",
+  "agent": "shell",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "aef41173-b73b-4e0e-aa75-d9bb8b1f392a"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:56:41Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing shell.exec",
+      "details": {
+        "preview": "Run ls | grep x"
+      }
+    }
+  ],
+  "error": "HTTP exception during execution"
+}

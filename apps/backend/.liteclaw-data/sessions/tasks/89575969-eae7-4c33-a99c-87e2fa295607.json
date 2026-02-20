@@ -1,0 +1,29 @@
+{
+  "task_id": "89575969-eae7-4c33-a99c-87e2fa295607",
+  "plan_id": "9d064f8e-4fa3-4ba7-8b22-bb47f3a36ecf",
+  "status": "failed",
+  "started_at": "2026-02-20T01:54:20Z",
+  "ended_at": "2026-02-20T01:54:20Z",
+  "agent": "file",
+  "events": [
+    {
+      "timestamp": "2026-02-20T01:54:20Z",
+      "level": "info",
+      "step_id": null,
+      "message": "Approval token validated",
+      "details": {
+        "token_id": "afe0e90f-527d-4526-b96c-09a6c024a1c5"
+      }
+    },
+    {
+      "timestamp": "2026-02-20T01:54:20Z",
+      "level": "info",
+      "step_id": "s1",
+      "message": "Executing file.read_text",
+      "details": {
+        "preview": "Read text from file"
+      }
+    }
+  ],
+  "error": "HTTP exception during execution"
+}

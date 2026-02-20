@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liteclaw.dev/schemas/plan.schema.json",
+  "title": "Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "plan_id",
+    "created_at",
+    "user_intent_summary",
+    "requires_approval",
+    "required_permissions",
+    "steps",
+    "estimated_risk",
+    "dry_run",
+    "router_confidence",
+    "router_fallback_used",
+    "explain"
+  ],
+  "properties": {
+    "plan_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "user_intent_summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requires_approval": {
+      "type": "boolean"
+    },
+    "required_permissions": {
+      "type": "array",
+      "items": {
+        "$ref": "permission-scope.schema.json"
+      }
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/Step"
+      }
+    },
+    "estimated_risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "dry_run": {
+      "type": "boolean",
+      "default": true
+    },
+    "router_confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "router_fallback_used": {
+      "type": "boolean"
+    },
+    "explain": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$defs": {
+    "Step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "step_id",
+        "agent",
+        "action",
+        "inputs",
+        "side_effects",
+        "preview"
+      ],
+      "properties": {
+        "step_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "agent": {
+          "type": "string",
+          "enum": ["conversation", "file", "shell", "browser"]
+        },
+        "action": {
+          "type": "string",
+          "pattern": "^[a-z]+\\.[a-z0-9_]+$"
+        },
+        "inputs": {
+          "type": "object"
+        },
+        "outputs_schema": {
+          "type": "object"
+        },
+        "side_effects": {
+          "type": "string",
+          "enum": ["none", "write", "exec", "network"]
+        },
+        "preview": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

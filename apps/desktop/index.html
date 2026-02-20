@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LiteClaw</title>
+        <link rel="stylesheet" href="/src/styles.css" />
+    </head>
+    <body>
+        <main class="app">
+            <header class="topbar">
+                <h1>LiteClaw</h1>
+                <div class="row">
+                    <button id="mode-toggle-btn">Switch to Advanced</button>
+                    <span id="local-only-badge">Local Only</span>
+                    <span id="status-badge">Connecting...</span>
+                </div>
+            </header>
+
+            <section id="backend-error" class="panel hidden">
+                <h2>Backend failed to start</h2>
+                <p id="backend-error-text"></p>
+                <div class="row">
+                    <button id="retry-btn">Retry</button>
+                    <button id="show-logs-btn">Show logs</button>
+                </div>
+            </section>
+
+            <section class="panel">
+                <p class="privacy">Local Only</p>
+                <label for="prompt">Assistant</label>
+                <div id="no-folders-banner" class="warning hidden">
+                    <p>No folders are allowed yet. Add a folder to continue.</p>
+                    <button id="banner-add-folder-btn">Add Folder...</button>
+                </div>
+                <textarea id="prompt" rows="4">
+search my project folder for 'TODO' and show top 10 files</textarea
+                >
+                <button id="run-btn">Run Demo Flow</button>
+            </section>
+
+            <section class="panel">
+                <h2>Settings - Permissions</h2>
+                <div class="row">
+                    <button id="add-folder-btn">Add Folder</button>
+                </div>
+                <label>
+                    <input id="shell-enabled-checkbox" type="checkbox" />
+                    Enable Shell (Read-only)
+                </label>
+                <ul id="allowed-folders-list" class="folder-list"></ul>
+                <p class="muted">
+                    System folders are blocked by default for safety.
+                </p>
+            </section>
+
+            <section class="panel">
+                <h2>Settings - Models</h2>
+                <p id="models-empty" class="muted">No model installed.</p>
+                <ul id="models-list" class="folder-list"></ul>
+                <div class="row">
+                    <button id="download-model-btn">
+                        Download Model (Stub)
+                    </button>
+                    <button id="register-model-btn">
+                        Register Local Model
+                    </button>
+                </div>
+                <p class="muted">Network actions disabled (MVP).</p>
+            </section>
+
+            <section class="panel">
+                <h2>Plan</h2>
+                <pre id="plan-output"></pre>
+            </section>
+
+            <section class="panel">
+                <h2>Action Card</h2>
+                <pre id="action-card-output"></pre>
+            </section>
+
+            <section class="panel">
+                <h2>Backend Logs</h2>
+                <pre id="backend-logs-output"></pre>
+            </section>
+
+            <section class="panel">
+                <h2>Task Trace</h2>
+                <pre id="trace-output"></pre>
+            </section>
+
+            <section id="advanced-panel" class="panel hidden">
+                <h2>Advanced</h2>
+                <div class="row">
+                    <button class="advanced-tab-btn" data-tab="tasks">
+                        Tasks
+                    </button>
+                    <button class="advanced-tab-btn" data-tab="logs">
+                        Logs
+                    </button>
+                    <button class="advanced-tab-btn" data-tab="health">
+                        System Health
+                    </button>
+                </div>
+
+                <div id="advanced-tasks" class="advanced-tab">
+                    <h3>Tasks</h3>
+                    <div class="split">
+                        <ul id="tasks-list" class="folder-list"></ul>
+                        <div>
+                            <div class="row">
+                                <label for="trace-level-filter">Level</label>
+                                <select id="trace-level-filter">
+                                    <option value="all">all</option>
+                                    <option value="info">info</option>
+                                    <option value="warn">warn</option>
+                                    <option value="error">error</option>
+                                    <option value="debug">debug</option>
+                                </select>
+                                <button id="copy-trace-btn">Copy Trace</button>
+                                <button id="export-trace-md-btn">
+                                    Export MD
+                                </button>
+                                <button id="export-trace-json-btn">
+                                    Export JSON
+                                </button>
+                            </div>
+                            <pre id="selected-trace-output"></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="advanced-logs" class="advanced-tab hidden">
+                    <h3>Logs</h3>
+                    <div class="row">
+                        <button id="logs-refresh-btn">Refresh Tail</button>
+                        <label
+                            ><input id="logs-auto-refresh" type="checkbox" />
+                            Auto-refresh</label
+                        >
+                    </div>
+                    <div class="row">
+                        <input
+                            id="logs-search-input"
+                            type="text"
+                            placeholder="Search logs..."
+                        />
+                        <button id="logs-search-btn">Search</button>
+                        <label
+                            ><input
+                                id="logs-redact-checkbox"
+                                type="checkbox"
+                                checked
+                            />
+                            Redact paths</label
+                        >
+                        <button id="logs-export-btn">Export Logs</button>
+                    </div>
+                    <pre id="logs-output"></pre>
+                </div>
+
+                <div id="advanced-health" class="advanced-tab hidden">
+                    <h3>System Health</h3>
+                    <div class="row">
+                        <button id="doctor-run-btn">Run Doctor</button>
+                        <button id="doctor-export-json-btn">Export JSON</button>
+                        <button id="doctor-export-md-btn">Export MD</button>
+                    </div>
+                    <pre id="doctor-output"></pre>
+                </div>
+            </section>
+        </main>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>

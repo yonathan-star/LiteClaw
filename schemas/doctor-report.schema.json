@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://liteclaw.dev/schemas/doctor-report.schema.json",
+  "title": "DoctorReport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "report_id",
+    "generated_at",
+    "overall_status",
+    "checks"
+  ],
+  "properties": {
+    "report_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "overall_status": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "warn",
+        "fail"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/Check"
+      }
+    },
+    "summary": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "Check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "status",
+        "details"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": [
+            "cpu",
+            "ram",
+            "disk",
+            "model_installed",
+            "model_loadable",
+            "backend_health",
+            "permissions_config"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ok",
+            "warn",
+            "fail"
+          ]
+        },
+        "details": {
+          "type": "string"
+        },
+        "metrics": {
+          "type": "object"
+        },
+        "recommendation": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
