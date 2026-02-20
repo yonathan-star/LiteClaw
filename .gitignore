@@ -12,3 +12,5 @@ target/
 # OS/editor
 .DS_Store
 Thumbs.db
+
+apps/backend/.liteclaw-data/
