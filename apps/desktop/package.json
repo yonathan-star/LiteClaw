@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tauri dev",
-    "build": "tauri build",
-    "tauri": "tauri"
+    "prepare:web": "node scripts/prepare-web.mjs",
+    "dev": "npm run prepare:web && tauri dev",
+    "build": "npm run prepare:web && tauri build",
+    "tauri": "npm run prepare:web && tauri"
   },
   "dependencies": {
     "@tauri-apps/api": "2.10.1",
