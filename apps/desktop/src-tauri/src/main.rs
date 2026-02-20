@@ -137,7 +137,10 @@ fn get_local_config(state: State<'_, AppState>) -> Result<LocalConfig, String> {
 
 #[tauri::command]
 fn add_allowed_folder(state: State<'_, AppState>, path: String) -> Result<LocalConfig, String> {
-    let mut runtime = state.runtime.lock().map_err(|_| "runtime lock poisoned".to_string())?;
+    let runtime = state
+        .runtime
+        .lock()
+        .map_err(|_| "runtime lock poisoned".to_string())?;
     let normalized = normalize_folder(&path)?;
     let mut config = read_local_config(&runtime.data_dir)?;
     if !config.allowed_folders.iter().any(|entry| entry == &normalized) {
