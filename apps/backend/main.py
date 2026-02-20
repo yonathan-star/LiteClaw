@@ -17,6 +17,7 @@ from typing import Any, Literal
 from uuid import UUID, uuid4
 
 from fastapi import Depends, FastAPI, Header, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 APP_VERSION = "0.1.0-mvp"
@@ -246,6 +247,13 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(title="LiteClaw Backend", version=APP_VERSION, lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 def require_bearer(authorization: str | None = Header(default=None)) -> None:
