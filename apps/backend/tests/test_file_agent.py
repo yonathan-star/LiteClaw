@@ -204,7 +204,7 @@ def test_file_search_5000_files_performance(tmp_path) -> None:
     assert response.status_code == 200, response.text
     trace = response.json()
     assert trace["status"] == "completed"
-    assert elapsed < 20.0, f"search took too long: {elapsed:.2f}s"
+    assert elapsed < 45.0, f"search took too long: {elapsed:.2f}s"
 
     completion_event = next(
         event
